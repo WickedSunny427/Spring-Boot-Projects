@@ -1,0 +1,13 @@
+#UAT APPLICATION CONFIGURATIONS
+
+#Server Configuration
+server:
+ port: 8087
+
+ #Database Configuration
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+    password: tiger

@@ -1,0 +1,439 @@
+2023-04-08 09:54:55 - Starting BankingmanagementApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 11880 (D:\eMexo\MyWorkspaces\Workspace_1\bankingmanagement-api\bankingmanagement-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\bankingmanagement-api\bankingmanagement-api)
+2023-04-08 09:54:56 - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-04-08 09:54:56 - The following 1 profile is active: "uat"
+2023-04-08 09:55:00 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-08 09:55:00 - Finished Spring Data repository scanning in 547 ms. Found 6 JPA repository interfaces.
+2023-04-08 09:55:03 - Tomcat initialized with port(s): 8087 (http)
+2023-04-08 09:55:03 - Starting service [Tomcat]
+2023-04-08 09:55:03 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-08 09:55:04 - Initializing Spring embedded WebApplicationContext
+2023-04-08 09:55:04 - Root WebApplicationContext: initialization completed in 7368 ms
+2023-04-08 09:55:05 - HikariPool-1 - Starting...
+2023-04-08 09:55:06 - HikariPool-1 - Start completed.
+2023-04-08 09:55:06 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-08 09:55:07 - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-08 09:55:08 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-08 09:55:08 - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-04-08 09:55:10 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-08 09:55:10 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-08 09:55:15 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-08 09:55:22 - Exposing 8 endpoint(s) beneath base path '/actuator'
+2023-04-08 09:55:23 - Tomcat started on port(s): 8087 (http) with context path ''
+2023-04-08 09:55:23 - Started BankingmanagementApiApplication in 28.642 seconds (JVM running for 56.584)
+2023-04-08 09:55:23 - BANKING MANAGEMENT APPLICATION IS RUNNING NOW !!!
+2023-04-08 09:55:36 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-08 09:55:36 - Initializing Servlet 'dispatcherServlet'
+2023-04-08 09:55:36 - Completed initialization in 5 ms
+2023-04-08 09:55:40 - Init duration for springdoc-openapi is: 3377 ms
+2023-04-08 09:56:17 - Inside BankController and calling the getApplications method ...
+2023-04-08 09:56:17 - Inside BankServiceImpl.findAll method.
+2023-04-08 09:56:17 - Fetching all bank details : banks [com.bankingmanagement.entity.Bank@6ba9213f]
+2023-04-08 09:56:17 - Bank response :[BankDTO(bankCode=0, bankName=GAREEB BANK, bankAddress=GUMNAAM BASTI, branches=[BranchDTO(branchId=0, branchName=INDIRANAGAR, branchAddress=FRAZER TOWN, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=DDD, branchAddress=DDD, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=CCC, branchAddress=CCC, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=DHURWA BRANCH, branchAddress=NEAR BUS STAND, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=401, accountType=SAVING, accountBalance=213682.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))], loansDTOs=[LoanDTO(loanId=1, loanType=HOME, loanAmount=0.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null)), LoanDTO(loanId=301, loanType=CAR, loanAmount=4784304.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null)), LoanDTO(loanId=2, loanType=EDUCATION, loanAmount=40988.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))]), BranchDTO(branchId=0, branchName=ELECTRONIC CITY, branchAddress=EMEXO NEELADRI NAGAR, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=2, accountType=FAKE, accountBalance=4444.0, branchDTO=null, customer=CustomerDTO(custId=503, custName=PANDYA, custPhone=890405004, custAddress=BARBADOS, loansDTOs=null, accountsDTOs=null))], loansDTOs=[]), BranchDTO(branchId=0, branchName=HINOO BRANCH, branchAddress=NEAR HANUMAN MANDIR, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=1, accountType=DEMAT, accountBalance=55478.0, branchDTO=null, customer=CustomerDTO(custId=502, custName=KOHLI, custPhone=920464685, custAddress=MG ROAD, loansDTOs=null, accountsDTOs=null))], loansDTOs=[]), BranchDTO(branchId=0, branchName=BLACKFIELD, branchAddress=BLACK HODDI, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=402, accountType=CURRENT, accountBalance=80999.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))], loansDTOs=[])])]
+2023-04-08 09:57:09 - Inside the BankController.getBankByName
+2023-04-08 09:57:10 - Inside BankServiceImpl.findBankByNameCustom and name: CANARA BANK
+2023-04-08 09:57:10 - Custom findBankByNameCustom invoked Successfully !!!
+2023-04-08 09:57:20 - Bank details not found !!!
+2023-04-08 09:57:20 - Exception while processing bank details
+com.bankingmanagement.exception.BankNotFoundException: Bank details not found !!!
+	at com.bankingmanagement.service.BankServiceImpl.findBankByNameCustom(BankServiceImpl.java:233)
+	at com.bankingmanagement.service.BankServiceImpl$$FastClassBySpringCGLIB$$4725a70e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:54)
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:366)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:421)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.bankingmanagement.service.BankServiceImpl$$EnhancerBySpringCGLIB$$6140e67d.findBankByNameCustom(<generated>)
+	at com.bankingmanagement.controller.BankController.getBankByName(BankController.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-08 09:57:31 - Inside BankController and calling the getApplications method ...
+2023-04-08 09:57:31 - Inside BankServiceImpl.findAll method.
+2023-04-08 09:57:31 - Fetching all bank details : banks [com.bankingmanagement.entity.Bank@33764ace]
+2023-04-08 09:57:31 - Bank response :[BankDTO(bankCode=0, bankName=GAREEB BANK, bankAddress=GUMNAAM BASTI, branches=[BranchDTO(branchId=0, branchName=INDIRANAGAR, branchAddress=FRAZER TOWN, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=DDD, branchAddress=DDD, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=CCC, branchAddress=CCC, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=DHURWA BRANCH, branchAddress=NEAR BUS STAND, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=401, accountType=SAVING, accountBalance=213682.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))], loansDTOs=[LoanDTO(loanId=1, loanType=HOME, loanAmount=0.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null)), LoanDTO(loanId=301, loanType=CAR, loanAmount=4784304.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null)), LoanDTO(loanId=2, loanType=EDUCATION, loanAmount=40988.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))]), BranchDTO(branchId=0, branchName=ELECTRONIC CITY, branchAddress=EMEXO NEELADRI NAGAR, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=2, accountType=FAKE, accountBalance=4444.0, branchDTO=null, customer=CustomerDTO(custId=503, custName=PANDYA, custPhone=890405004, custAddress=BARBADOS, loansDTOs=null, accountsDTOs=null))], loansDTOs=[]), BranchDTO(branchId=0, branchName=HINOO BRANCH, branchAddress=NEAR HANUMAN MANDIR, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=1, accountType=DEMAT, accountBalance=55478.0, branchDTO=null, customer=CustomerDTO(custId=502, custName=KOHLI, custPhone=920464685, custAddress=MG ROAD, loansDTOs=null, accountsDTOs=null))], loansDTOs=[]), BranchDTO(branchId=0, branchName=BLACKFIELD, branchAddress=BLACK HODDI, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=402, accountType=CURRENT, accountBalance=80999.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))], loansDTOs=[])])]
+2023-04-08 10:03:17 - Starting BankingmanagementApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 11920 (D:\eMexo\MyWorkspaces\Workspace_1\bankingmanagement-api\bankingmanagement-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\bankingmanagement-api\bankingmanagement-api)
+2023-04-08 10:03:17 - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-04-08 10:03:17 - The following 1 profile is active: "uat"
+2023-04-08 10:03:21 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-08 10:03:21 - Finished Spring Data repository scanning in 213 ms. Found 6 JPA repository interfaces.
+2023-04-08 10:03:23 - Tomcat initialized with port(s): 8087 (http)
+2023-04-08 10:03:23 - Starting service [Tomcat]
+2023-04-08 10:03:23 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-08 10:03:24 - Initializing Spring embedded WebApplicationContext
+2023-04-08 10:03:24 - Root WebApplicationContext: initialization completed in 6708 ms
+2023-04-08 10:03:25 - HikariPool-1 - Starting...
+2023-04-08 10:03:27 - HikariPool-1 - Start completed.
+2023-04-08 10:03:27 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-08 10:03:27 - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-08 10:03:28 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-08 10:03:28 - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-04-08 10:03:31 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-08 10:03:31 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-08 10:03:34 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@55159007, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@edf4973, org.springframework.security.web.context.SecurityContextPersistenceFilter@6cee52e2, org.springframework.security.web.header.HeaderWriterFilter@701c413, org.springframework.security.web.authentication.logout.LogoutFilter@55e3b64d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5481f204, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7cb4d4ee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44ec6637, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a49753, org.springframework.security.web.session.SessionManagementFilter@3a75d9a1, org.springframework.security.web.access.ExceptionTranslationFilter@436103b1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@140fa482]
+2023-04-08 10:03:35 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-08 10:03:40 - Exposing 8 endpoint(s) beneath base path '/actuator'
+2023-04-08 10:03:40 - Tomcat started on port(s): 8087 (http) with context path ''
+2023-04-08 10:03:40 - Started BankingmanagementApiApplication in 24.273 seconds (JVM running for 27.542)
+2023-04-08 10:03:40 - BANKING MANAGEMENT APPLICATION IS RUNNING NOW !!!
+2023-04-08 10:04:04 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-08 10:04:04 - Initializing Servlet 'dispatcherServlet'
+2023-04-08 10:04:04 - Completed initialization in 4 ms
+2023-04-08 10:04:04 - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [182] milliseconds.
+2023-04-08 10:05:17 - Inside BankController and calling the getApplications method ...
+2023-04-08 10:05:17 - Inside BankServiceImpl.findAll method.
+2023-04-08 10:05:17 - Fetching all bank details : banks [com.bankingmanagement.entity.Bank@42c7a5b1]
+2023-04-08 10:05:18 - Bank response :[BankDTO(bankCode=0, bankName=GAREEB BANK, bankAddress=GUMNAAM BASTI, branches=[BranchDTO(branchId=0, branchName=INDIRANAGAR, branchAddress=FRAZER TOWN, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=DDD, branchAddress=DDD, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=DHURWA BRANCH, branchAddress=NEAR BUS STAND, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=401, accountType=SAVING, accountBalance=213682.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))], loansDTOs=[LoanDTO(loanId=1, loanType=HOME, loanAmount=0.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null)), LoanDTO(loanId=301, loanType=CAR, loanAmount=4784304.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null)), LoanDTO(loanId=2, loanType=EDUCATION, loanAmount=40988.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))]), BranchDTO(branchId=0, branchName=CCC, branchAddress=CCC, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=ELECTRONIC CITY, branchAddress=EMEXO NEELADRI NAGAR, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=2, accountType=FAKE, accountBalance=4444.0, branchDTO=null, customer=CustomerDTO(custId=503, custName=PANDYA, custPhone=890405004, custAddress=BARBADOS, loansDTOs=null, accountsDTOs=null))], loansDTOs=[]), BranchDTO(branchId=0, branchName=HINOO BRANCH, branchAddress=NEAR HANUMAN MANDIR, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=1, accountType=DEMAT, accountBalance=55478.0, branchDTO=null, customer=CustomerDTO(custId=502, custName=KOHLI, custPhone=920464685, custAddress=MG ROAD, loansDTOs=null, accountsDTOs=null))], loansDTOs=[]), BranchDTO(branchId=0, branchName=BLACKFIELD, branchAddress=BLACK HODDI, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=402, accountType=CURRENT, accountBalance=80999.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))], loansDTOs=[])])]
+2023-04-08 10:05:41 - Inside BankController and calling the getApplications method ...
+2023-04-08 10:05:41 - Inside BankServiceImpl.findAll method.
+2023-04-08 10:05:41 - Fetching all bank details : banks [com.bankingmanagement.entity.Bank@570ed7b4]
+2023-04-08 10:05:41 - Bank response :[BankDTO(bankCode=0, bankName=GAREEB BANK, bankAddress=GUMNAAM BASTI, branches=[BranchDTO(branchId=0, branchName=INDIRANAGAR, branchAddress=FRAZER TOWN, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=DDD, branchAddress=DDD, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=DHURWA BRANCH, branchAddress=NEAR BUS STAND, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=401, accountType=SAVING, accountBalance=213682.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))], loansDTOs=[LoanDTO(loanId=1, loanType=HOME, loanAmount=0.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null)), LoanDTO(loanId=301, loanType=CAR, loanAmount=4784304.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null)), LoanDTO(loanId=2, loanType=EDUCATION, loanAmount=40988.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))]), BranchDTO(branchId=0, branchName=CCC, branchAddress=CCC, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=ELECTRONIC CITY, branchAddress=EMEXO NEELADRI NAGAR, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=2, accountType=FAKE, accountBalance=4444.0, branchDTO=null, customer=CustomerDTO(custId=503, custName=PANDYA, custPhone=890405004, custAddress=BARBADOS, loansDTOs=null, accountsDTOs=null))], loansDTOs=[]), BranchDTO(branchId=0, branchName=HINOO BRANCH, branchAddress=NEAR HANUMAN MANDIR, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=1, accountType=DEMAT, accountBalance=55478.0, branchDTO=null, customer=CustomerDTO(custId=502, custName=KOHLI, custPhone=920464685, custAddress=MG ROAD, loansDTOs=null, accountsDTOs=null))], loansDTOs=[]), BranchDTO(branchId=0, branchName=BLACKFIELD, branchAddress=BLACK HODDI, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=402, accountType=CURRENT, accountBalance=80999.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))], loansDTOs=[])])]
+2023-04-08 10:08:08 - Inside BankController and calling the getApplications method ...
+2023-04-08 10:08:08 - Inside BankServiceImpl.findAll method.
+2023-04-08 10:08:08 - Fetching all bank details : banks [com.bankingmanagement.entity.Bank@d35437f]
+2023-04-08 10:08:08 - Bank response :[BankDTO(bankCode=0, bankName=GAREEB BANK, bankAddress=GUMNAAM BASTI, branches=[BranchDTO(branchId=0, branchName=INDIRANAGAR, branchAddress=FRAZER TOWN, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=DDD, branchAddress=DDD, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=CCC, branchAddress=CCC, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=DHURWA BRANCH, branchAddress=NEAR BUS STAND, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=401, accountType=SAVING, accountBalance=213682.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))], loansDTOs=[LoanDTO(loanId=1, loanType=HOME, loanAmount=0.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null)), LoanDTO(loanId=301, loanType=CAR, loanAmount=4784304.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null)), LoanDTO(loanId=2, loanType=EDUCATION, loanAmount=40988.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))]), BranchDTO(branchId=0, branchName=ELECTRONIC CITY, branchAddress=EMEXO NEELADRI NAGAR, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=2, accountType=FAKE, accountBalance=4444.0, branchDTO=null, customer=CustomerDTO(custId=503, custName=PANDYA, custPhone=890405004, custAddress=BARBADOS, loansDTOs=null, accountsDTOs=null))], loansDTOs=[]), BranchDTO(branchId=0, branchName=HINOO BRANCH, branchAddress=NEAR HANUMAN MANDIR, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=1, accountType=DEMAT, accountBalance=55478.0, branchDTO=null, customer=CustomerDTO(custId=502, custName=KOHLI, custPhone=920464685, custAddress=MG ROAD, loansDTOs=null, accountsDTOs=null))], loansDTOs=[]), BranchDTO(branchId=0, branchName=BLACKFIELD, branchAddress=BLACK HODDI, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=402, accountType=CURRENT, accountBalance=80999.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))], loansDTOs=[])])]
+2023-04-08 10:16:42 - Inside AccountController and calling the getAllAccounts method ...
+2023-04-08 10:16:42 - Inside AccountServiceImpl.findAll method.
+2023-04-08 10:16:43 - Fetching all account details : accounts [com.bankingmanagement.entity.Account@21f6021a, com.bankingmanagement.entity.Account@6559d1c2, com.bankingmanagement.entity.Account@4dbe4bb1, com.bankingmanagement.entity.Account@66425405]
+2023-04-08 10:16:43 - Account response : [AccountDTO(accountNumber=401, accountType=SAVING, accountBalance=213682.0, branchDTO=BranchDTO(branchId=0, branchName=DHURWA BRANCH, branchAddress=NEAR BUS STAND, bankDTO=BankDTO(bankCode=0, bankName=GAREEB BANK, bankAddress=GUMNAAM BASTI, branches=null), accountsDTOs=null, loansDTOs=null), customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=[LoanDTO(loanId=1, loanType=HOME, loanAmount=0.0, branchDTO=null, customer=null), LoanDTO(loanId=301, loanType=CAR, loanAmount=4784304.0, branchDTO=null, customer=null), LoanDTO(loanId=2, loanType=EDUCATION, loanAmount=40988.0, branchDTO=null, customer=null)], accountsDTOs=null)), AccountDTO(accountNumber=402, accountType=CURRENT, accountBalance=80999.0, branchDTO=BranchDTO(branchId=0, branchName=BLACKFIELD, branchAddress=BLACK HODDI, bankDTO=BankDTO(bankCode=0, bankName=GAREEB BANK, bankAddress=GUMNAAM BASTI, branches=null), accountsDTOs=null, loansDTOs=null), customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=[LoanDTO(loanId=1, loanType=HOME, loanAmount=0.0, branchDTO=null, customer=null), LoanDTO(loanId=301, loanType=CAR, loanAmount=4784304.0, branchDTO=null, customer=null), LoanDTO(loanId=2, loanType=EDUCATION, loanAmount=40988.0, branchDTO=null, customer=null)], accountsDTOs=null)), AccountDTO(accountNumber=1, accountType=DEMAT, accountBalance=55478.0, branchDTO=BranchDTO(branchId=0, branchName=HINOO BRANCH, branchAddress=NEAR HANUMAN MANDIR, bankDTO=BankDTO(bankCode=0, bankName=GAREEB BANK, bankAddress=GUMNAAM BASTI, branches=null), accountsDTOs=null, loansDTOs=null), customer=CustomerDTO(custId=502, custName=KOHLI, custPhone=920464685, custAddress=MG ROAD, loansDTOs=[], accountsDTOs=null)), AccountDTO(accountNumber=2, accountType=FAKE, accountBalance=4444.0, branchDTO=BranchDTO(branchId=0, branchName=ELECTRONIC CITY, branchAddress=EMEXO NEELADRI NAGAR, bankDTO=BankDTO(bankCode=0, bankName=GAREEB BANK, bankAddress=GUMNAAM BASTI, branches=null), accountsDTOs=null, loansDTOs=null), customer=CustomerDTO(custId=503, custName=PANDYA, custPhone=890405004, custAddress=BARBADOS, loansDTOs=[], accountsDTOs=null))]
+2023-04-08 10:19:15 - Starting BankingmanagementApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 12992 (D:\eMexo\MyWorkspaces\Workspace_1\bankingmanagement-api\bankingmanagement-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\bankingmanagement-api\bankingmanagement-api)
+2023-04-08 10:19:15 - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-04-08 10:19:15 - The following 1 profile is active: "uat"
+2023-04-08 10:19:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-08 10:19:19 - Finished Spring Data repository scanning in 214 ms. Found 6 JPA repository interfaces.
+2023-04-08 10:19:21 - Tomcat initialized with port(s): 8087 (http)
+2023-04-08 10:19:21 - Starting service [Tomcat]
+2023-04-08 10:19:21 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-08 10:19:22 - Initializing Spring embedded WebApplicationContext
+2023-04-08 10:19:22 - Root WebApplicationContext: initialization completed in 6680 ms
+2023-04-08 10:19:23 - HikariPool-1 - Starting...
+2023-04-08 10:19:24 - HikariPool-1 - Start completed.
+2023-04-08 10:19:24 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-08 10:19:24 - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-08 10:19:25 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-08 10:19:26 - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-04-08 10:19:29 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-08 10:19:29 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-08 10:19:32 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d5eca06, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79169472, org.springframework.security.web.context.SecurityContextPersistenceFilter@55f4ec04, org.springframework.security.web.header.HeaderWriterFilter@18c95fbb, org.springframework.security.web.authentication.logout.LogoutFilter@f83616, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5825932c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fd4850b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1db9d253, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@304cad3a, org.springframework.security.web.session.SessionManagementFilter@280e4390, org.springframework.security.web.access.ExceptionTranslationFilter@58dea0a7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e04c89d]
+2023-04-08 10:19:32 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-08 10:19:37 - Exposing 8 endpoint(s) beneath base path '/actuator'
+2023-04-08 10:19:37 - Tomcat started on port(s): 8087 (http) with context path ''
+2023-04-08 10:19:37 - Started BankingmanagementApiApplication in 23.984 seconds (JVM running for 25.364)
+2023-04-08 10:19:37 - BANKING MANAGEMENT APPLICATION IS RUNNING NOW !!!
+2023-04-08 10:20:45 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-08 10:20:45 - Initializing Servlet 'dispatcherServlet'
+2023-04-08 10:20:45 - Completed initialization in 4 ms
+2023-04-08 10:20:45 - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [120] milliseconds.
+2023-04-08 10:20:50 - Init duration for springdoc-openapi is: 3944 ms
+2023-04-08 10:33:17 - Inside BankController and calling the getApplications method ...
+2023-04-08 10:33:17 - Inside BankServiceImpl.findAll method.
+2023-04-08 10:33:17 - Fetching all bank details : banks [com.bankingmanagement.entity.Bank@1d980aa]
+2023-04-08 10:33:17 - Bank response :[BankDTO(bankCode=0, bankName=GAREEB BANK, bankAddress=GUMNAAM BASTI, branches=[BranchDTO(branchId=0, branchName=INDIRANAGAR, branchAddress=FRAZER TOWN, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=DDD, branchAddress=DDD, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=CCC, branchAddress=CCC, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=DHURWA BRANCH, branchAddress=NEAR BUS STAND, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=401, accountType=SAVING, accountBalance=213682.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))], loansDTOs=[LoanDTO(loanId=1, loanType=HOME, loanAmount=0.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null)), LoanDTO(loanId=301, loanType=CAR, loanAmount=4784304.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null)), LoanDTO(loanId=2, loanType=EDUCATION, loanAmount=40988.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))]), BranchDTO(branchId=0, branchName=ELECTRONIC CITY, branchAddress=EMEXO NEELADRI NAGAR, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=2, accountType=FAKE, accountBalance=4444.0, branchDTO=null, customer=CustomerDTO(custId=503, custName=PANDYA, custPhone=890405004, custAddress=BARBADOS, loansDTOs=null, accountsDTOs=null))], loansDTOs=[]), BranchDTO(branchId=0, branchName=HINOO BRANCH, branchAddress=NEAR HANUMAN MANDIR, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=1, accountType=DEMAT, accountBalance=55478.0, branchDTO=null, customer=CustomerDTO(custId=502, custName=KOHLI, custPhone=920464685, custAddress=MG ROAD, loansDTOs=null, accountsDTOs=null))], loansDTOs=[]), BranchDTO(branchId=0, branchName=BLACKFIELD, branchAddress=BLACK HODDI, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=402, accountType=CURRENT, accountBalance=80999.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))], loansDTOs=[])])]
+2023-04-08 10:51:24 - Starting BankingmanagementApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 6976 (D:\eMexo\MyWorkspaces\Workspace_1\bankingmanagement-api\bankingmanagement-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\bankingmanagement-api\bankingmanagement-api)
+2023-04-08 10:51:24 - Running with Spring Boot v2.7.8, Spring v5.3.25
+2023-04-08 10:51:24 - The following 1 profile is active: "uat"
+2023-04-08 10:51:28 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-08 10:51:28 - Finished Spring Data repository scanning in 221 ms. Found 6 JPA repository interfaces.
+2023-04-08 10:51:31 - Tomcat initialized with port(s): 8087 (http)
+2023-04-08 10:51:31 - Starting service [Tomcat]
+2023-04-08 10:51:31 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-08 10:51:31 - Initializing Spring embedded WebApplicationContext
+2023-04-08 10:51:31 - Root WebApplicationContext: initialization completed in 6689 ms
+2023-04-08 10:51:33 - HikariPool-1 - Starting...
+2023-04-08 10:51:34 - HikariPool-1 - Start completed.
+2023-04-08 10:51:34 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-08 10:51:34 - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-08 10:51:35 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-08 10:51:36 - HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-04-08 10:51:39 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-08 10:51:39 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-08 10:51:43 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e76ade9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a3ab73a, org.springframework.security.web.context.SecurityContextPersistenceFilter@1eda853f, org.springframework.security.web.header.HeaderWriterFilter@419c70f6, org.springframework.security.web.authentication.logout.LogoutFilter@359fd0a2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5620470a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3984e2b3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35bb3fea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12a8d03b, org.springframework.security.web.session.SessionManagementFilter@1f67d37f, org.springframework.security.web.access.ExceptionTranslationFilter@4f239a76, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24f8707c]
+2023-04-08 10:51:43 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-08 10:51:48 - Exposing 8 endpoint(s) beneath base path '/actuator'
+2023-04-08 10:51:48 - Tomcat started on port(s): 8087 (http) with context path ''
+2023-04-08 10:51:49 - Started BankingmanagementApiApplication in 25.474 seconds (JVM running for 26.904)
+2023-04-08 10:51:49 - BANKING MANAGEMENT APPLICATION IS RUNNING NOW !!!
+2023-04-08 10:52:15 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-08 10:52:15 - Initializing Servlet 'dispatcherServlet'
+2023-04-08 10:52:15 - Completed initialization in 4 ms
+2023-04-08 10:52:16 - Inside BankController and calling the getApplications method ...
+2023-04-08 10:52:16 - Inside BankServiceImpl.findAll method.
+2023-04-08 10:52:16 - Fetching all bank details : banks [com.bankingmanagement.entity.Bank@43664672]
+2023-04-08 10:52:16 - Bank response :[BankDTO(bankCode=0, bankName=GAREEB BANK, bankAddress=GUMNAAM BASTI, branches=[BranchDTO(branchId=0, branchName=INDIRANAGAR, branchAddress=FRAZER TOWN, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=DDD, branchAddress=DDD, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=CCC, branchAddress=CCC, bankDTO=null, accountsDTOs=[], loansDTOs=[]), BranchDTO(branchId=0, branchName=DHURWA BRANCH, branchAddress=NEAR BUS STAND, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=401, accountType=SAVING, accountBalance=213682.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))], loansDTOs=[LoanDTO(loanId=1, loanType=HOME, loanAmount=0.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null)), LoanDTO(loanId=301, loanType=CAR, loanAmount=4784304.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null)), LoanDTO(loanId=2, loanType=EDUCATION, loanAmount=40988.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))]), BranchDTO(branchId=0, branchName=ELECTRONIC CITY, branchAddress=EMEXO NEELADRI NAGAR, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=2, accountType=FAKE, accountBalance=4444.0, branchDTO=null, customer=CustomerDTO(custId=503, custName=PANDYA, custPhone=890405004, custAddress=BARBADOS, loansDTOs=null, accountsDTOs=null))], loansDTOs=[]), BranchDTO(branchId=0, branchName=HINOO BRANCH, branchAddress=NEAR HANUMAN MANDIR, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=1, accountType=DEMAT, accountBalance=55478.0, branchDTO=null, customer=CustomerDTO(custId=502, custName=KOHLI, custPhone=920464685, custAddress=MG ROAD, loansDTOs=null, accountsDTOs=null))], loansDTOs=[]), BranchDTO(branchId=0, branchName=BLACKFIELD, branchAddress=BLACK HODDI, bankDTO=null, accountsDTOs=[AccountDTO(accountNumber=402, accountType=CURRENT, accountBalance=80999.0, branchDTO=null, customer=CustomerDTO(custId=501, custName=DHONI, custPhone=8974589450, custAddress=SATTELITE COLONY, loansDTOs=null, accountsDTOs=null))], loansDTOs=[])])]
+2023-04-08 10:53:50 - Exception while processing bank details
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.bankingmanagement.dto.BranchDTO` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('string'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.bankingmanagement.dto.BranchDTO` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('string')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 10, column: 7] (through reference chain: com.bankingmanagement.dto.BranchRequest["bankDTO"]->com.bankingmanagement.dto.BankDTO["branches"]->java.util.HashSet[0])
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:391)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:343)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:185)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:160)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:133)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:337)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:198)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.bankingmanagement.dto.BranchDTO` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('string')
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 10, column: 7] (through reference chain: com.bankingmanagement.dto.BranchRequest["bankDTO"]->com.bankingmanagement.dto.BankDTO["branches"]->java.util.HashSet[0])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1728)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1353)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromString(StdDeserializer.java:311)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromString(BeanDeserializerBase.java:1495)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:197)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:355)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:392)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:392)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3682)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:380)
+	... 96 common frames omitted
+2023-04-08 10:55:30 - Exception while processing bank details
+org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:211)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:160)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:133)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:337)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:198)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)

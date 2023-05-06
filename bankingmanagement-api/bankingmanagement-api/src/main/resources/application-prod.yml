@@ -1,0 +1,5 @@
+#COMMON APPLICATION CONFIGURATIONS
+
+#Server Configuration
+server:
+ port: 8088
