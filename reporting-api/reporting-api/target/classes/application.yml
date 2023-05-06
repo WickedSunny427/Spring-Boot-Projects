@@ -1,0 +1,19 @@
+#Reporting Service SICOMMONT Environment Properties
+server:
+  port: 9092
+
+#Log setup
+logging:
+  level:
+    org:
+      springframework: info
+    com:
+      bugtracking: debug
+  file:
+    name: reportingapi.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    
+ #URL Configuration of another Microservice
+application:
+ url: http://localhost:8090/api/v1/applications

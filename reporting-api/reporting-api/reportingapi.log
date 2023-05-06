@@ -1,0 +1,726 @@
+2023-02-19 09:07:44 - Starting ReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 10404 (D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api)
+2023-02-19 09:07:44 - The following 1 profile is active: "uat"
+2023-02-19 09:07:47 - Tomcat initialized with port(s): 9092 (http)
+2023-02-19 09:07:47 - Starting service [Tomcat]
+2023-02-19 09:07:47 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-19 09:07:48 - Initializing Spring embedded WebApplicationContext
+2023-02-19 09:07:48 - Root WebApplicationContext: initialization completed in 3825 ms
+2023-02-19 09:07:52 - Tomcat started on port(s): 9092 (http) with context path ''
+2023-02-19 09:07:52 - Started ReportingApiApplication in 9.417 seconds (JVM running for 27.125)
+2023-02-19 09:07:52 - REPORTING-API IS RUNNING NOW !!!
+2023-02-19 09:08:09 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-19 09:08:09 - Initializing Servlet 'dispatcherServlet'
+2023-02-19 09:08:09 - Completed initialization in 2 ms
+2023-02-19 09:08:11 - Init duration for springdoc-openapi is: 1013 ms
+2023-02-19 09:08:23 - Inside the ReportingRestClientController.getApplications
+2023-02-19 09:08:24 - Inside ReportingRestClientServiceImpl.findAll, and applicationGetAllUrl:http://localhost:8090/api/v1/applications
+2023-02-19 09:08:24 - Application response:[com.reporting.model.ApplicationVO@2f1799b5, com.reporting.model.ApplicationVO@46532bbd, com.reporting.model.ApplicationVO@7e990cd3, com.reporting.model.ApplicationVO@21bff5db]
+2023-02-19 09:08:40 - Input to ReportingRestClientController.delete, id:82
+2023-02-19 09:08:40 - Inside ReportingRestClientServiceImpl.deleteById, and applicationGetAllUrl:http://localhost:8090/api/v1/applications
+2023-02-19 09:08:40 - URL with Appended ID : http://localhost:8090/api/v1/applications/82
+2023-02-19 09:08:40 - Application deleted Successfully !!!
+2023-02-19 09:08:40 - Response from application delete
+2023-02-19 09:08:48 - Inside the ReportingRestClientController.getApplications
+2023-02-19 09:08:48 - Inside ReportingRestClientServiceImpl.findAll, and applicationGetAllUrl:http://localhost:8090/api/v1/applications
+2023-02-19 09:08:48 - Application response:[com.reporting.model.ApplicationVO@727309ff, com.reporting.model.ApplicationVO@7cb4e9c1, com.reporting.model.ApplicationVO@788b628f]
+2023-02-19 09:12:40 - Starting ReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 1864 (D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api)
+2023-02-19 09:12:40 - The following 1 profile is active: "uat"
+2023-02-19 09:12:43 - Tomcat initialized with port(s): 9092 (http)
+2023-02-19 09:12:43 - Starting service [Tomcat]
+2023-02-19 09:12:43 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-19 09:12:43 - Initializing Spring embedded WebApplicationContext
+2023-02-19 09:12:43 - Root WebApplicationContext: initialization completed in 3308 ms
+2023-02-19 09:12:47 - Tomcat started on port(s): 9092 (http) with context path ''
+2023-02-19 09:12:47 - Started ReportingApiApplication in 8.812 seconds (JVM running for 10.043)
+2023-02-19 09:12:47 - REPORTING-API IS RUNNING NOW !!!
+2023-02-19 09:12:56 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-19 09:12:56 - Initializing Servlet 'dispatcherServlet'
+2023-02-19 09:12:56 - Completed initialization in 1 ms
+2023-02-19 09:12:58 - Init duration for springdoc-openapi is: 879 ms
+2023-02-19 09:13:10 - Inside the ReportingRestClientController.getApplications
+2023-02-19 09:13:10 - Inside ReportingRestClientServiceImpl.findAll, and applicationGetAllUrl:http://localhost:8090/api/v1/applications
+2023-02-19 09:13:11 - Application response:[com.reporting.model.ApplicationVO@6707bb5f, com.reporting.model.ApplicationVO@38eec51e, com.reporting.model.ApplicationVO@67611ab1]
+2023-02-19 09:13:31 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/reports/ADHOC': {public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationByName(java.lang.String), public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationById(int)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/reports/ADHOC': {public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationByName(java.lang.String), public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationById(int)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:432)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1265)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1047)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-19 09:15:54 - Starting ReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 6012 (D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api)
+2023-02-19 09:15:54 - The following 1 profile is active: "uat"
+2023-02-19 09:16:05 - Starting ReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 11028 (D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api)
+2023-02-19 09:16:05 - The following 1 profile is active: "uat"
+2023-02-19 09:16:08 - Tomcat initialized with port(s): 9092 (http)
+2023-02-19 09:16:08 - Starting service [Tomcat]
+2023-02-19 09:16:08 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-19 09:16:09 - Initializing Spring embedded WebApplicationContext
+2023-02-19 09:16:09 - Root WebApplicationContext: initialization completed in 3486 ms
+2023-02-19 09:16:13 - Tomcat started on port(s): 9092 (http) with context path ''
+2023-02-19 09:16:13 - Started ReportingApiApplication in 9.005 seconds (JVM running for 10.215)
+2023-02-19 09:16:13 - REPORTING-API IS RUNNING NOW !!!
+2023-02-19 09:16:24 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-19 09:16:24 - Initializing Servlet 'dispatcherServlet'
+2023-02-19 09:16:24 - Completed initialization in 2 ms
+2023-02-19 09:16:25 - Init duration for springdoc-openapi is: 877 ms
+2023-02-19 09:16:59 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/reports/ADHOC': {public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationByName(java.lang.String), public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationById(int)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/reports/ADHOC': {public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationByName(java.lang.String), public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationById(int)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:432)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1265)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1047)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-19 09:23:26 - Starting ReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 9512 (D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api)
+2023-02-19 09:23:26 - The following 1 profile is active: "uat"
+2023-02-19 09:23:29 - Tomcat initialized with port(s): 9092 (http)
+2023-02-19 09:23:29 - Starting service [Tomcat]
+2023-02-19 09:23:29 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-19 09:23:29 - Initializing Spring embedded WebApplicationContext
+2023-02-19 09:23:29 - Root WebApplicationContext: initialization completed in 3312 ms
+2023-02-19 09:23:33 - Tomcat started on port(s): 9092 (http) with context path ''
+2023-02-19 09:23:33 - Started ReportingApiApplication in 8.768 seconds (JVM running for 10.04)
+2023-02-19 09:23:33 - REPORTING-API IS RUNNING NOW !!!
+2023-02-19 09:23:42 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-19 09:23:42 - Initializing Servlet 'dispatcherServlet'
+2023-02-19 09:23:42 - Completed initialization in 4 ms
+2023-02-19 09:23:43 - Init duration for springdoc-openapi is: 922 ms
+2023-02-19 09:24:12 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/reports/ADHOC': {public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationByName(java.lang.String), public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationById(int)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/reports/ADHOC': {public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationByName(java.lang.String), public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationById(int)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:432)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1265)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1047)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-19 21:04:38 - Starting ReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 11152 (D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api)
+2023-02-19 21:04:38 - The following 1 profile is active: "uat"
+2023-02-19 21:04:41 - Tomcat initialized with port(s): 9092 (http)
+2023-02-19 21:04:41 - Starting service [Tomcat]
+2023-02-19 21:04:41 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-19 21:04:42 - Initializing Spring embedded WebApplicationContext
+2023-02-19 21:04:42 - Root WebApplicationContext: initialization completed in 3859 ms
+2023-02-19 21:04:46 - Tomcat started on port(s): 9092 (http) with context path ''
+2023-02-19 21:04:46 - Started ReportingApiApplication in 9.961 seconds (JVM running for 24.336)
+2023-02-19 21:04:46 - REPORTING-API IS RUNNING NOW !!!
+2023-02-19 21:05:28 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-19 21:05:28 - Initializing Servlet 'dispatcherServlet'
+2023-02-19 21:05:28 - Completed initialization in 3 ms
+2023-02-19 21:05:32 - Init duration for springdoc-openapi is: 2560 ms
+2023-02-19 21:06:19 - Inside the ReportingRestClientController.getApplications
+2023-02-19 21:06:19 - Inside ReportingRestClientServiceImpl.findAll, and applicationGetAllUrl:http://localhost:8090/api/v1/applications
+2023-02-19 21:06:20 - Application response:[com.reporting.model.ApplicationVO@6f5341be, com.reporting.model.ApplicationVO@2e1aa2f8, com.reporting.model.ApplicationVO@5944601b]
+2023-02-19 21:06:44 - Input to ReportingRestClientController.delete, id:102
+2023-02-19 21:06:44 - Inside ReportingRestClientServiceImpl.deleteById, and applicationGetAllUrl:http://localhost:8090/api/v1/applications
+2023-02-19 21:06:44 - URL with Appended ID : http://localhost:8090/api/v1/applications/102
+2023-02-19 21:06:45 - Application delete failed. !!!
+2023-02-19 21:06:45 - Response from application delete
+2023-02-19 21:08:06 - Starting ReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 9904 (D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api)
+2023-02-19 21:08:06 - The following 1 profile is active: "uat"
+2023-02-19 21:08:10 - Tomcat initialized with port(s): 9092 (http)
+2023-02-19 21:08:10 - Starting service [Tomcat]
+2023-02-19 21:08:10 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-19 21:08:11 - Initializing Spring embedded WebApplicationContext
+2023-02-19 21:08:11 - Root WebApplicationContext: initialization completed in 4123 ms
+2023-02-19 21:08:15 - Tomcat started on port(s): 9092 (http) with context path ''
+2023-02-19 21:08:15 - Started ReportingApiApplication in 10.006 seconds (JVM running for 11.327)
+2023-02-19 21:08:15 - REPORTING-API IS RUNNING NOW !!!
+2023-02-19 21:08:21 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-19 21:08:21 - Initializing Servlet 'dispatcherServlet'
+2023-02-19 21:08:21 - Completed initialization in 1 ms
+2023-02-19 21:08:23 - Init duration for springdoc-openapi is: 1092 ms
+2023-02-19 21:08:39 - Input to ReportingRestClientController.delete, id:102
+2023-02-19 21:08:39 - Inside ReportingRestClientServiceImpl.deleteById, and applicationGetAllUrl:http://localhost:8090/api/v1/applications
+2023-02-19 21:08:39 - URL with Appended ID : http://localhost:8090/api/v1/applications/102
+2023-02-19 21:08:39 - Application delete failed. !!!
+2023-02-19 21:08:39 - Response from application delete
+2023-02-19 21:12:43 - Starting ReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 8612 (D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api)
+2023-02-19 21:12:43 - The following 1 profile is active: "uat"
+2023-02-19 21:12:46 - Tomcat initialized with port(s): 9092 (http)
+2023-02-19 21:12:46 - Starting service [Tomcat]
+2023-02-19 21:12:46 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-19 21:12:46 - Initializing Spring embedded WebApplicationContext
+2023-02-19 21:12:46 - Root WebApplicationContext: initialization completed in 3616 ms
+2023-02-19 21:12:51 - Tomcat started on port(s): 9092 (http) with context path ''
+2023-02-19 21:12:51 - Started ReportingApiApplication in 9.402 seconds (JVM running for 10.708)
+2023-02-19 21:12:51 - REPORTING-API IS RUNNING NOW !!!
+2023-02-19 21:13:04 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-19 21:13:04 - Initializing Servlet 'dispatcherServlet'
+2023-02-19 21:13:04 - Completed initialization in 4 ms
+2023-02-19 21:13:06 - Init duration for springdoc-openapi is: 1094 ms
+2023-02-19 21:13:16 - Input to ReportingRestClientController.delete, id:102
+2023-02-19 21:13:16 - Inside ReportingRestClientServiceImpl.deleteById, and applicationGetAllUrl:http://localhost:8090/api/v1/applications
+2023-02-19 21:13:16 - URL with Appended ID : http://localhost:8090/api/v1/applications/102
+2023-02-19 21:13:16 - Application delete failed. !!!
+2023-02-19 21:13:16 - Response from application delete
+2023-02-19 21:26:09 - Starting ReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 16348 (D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api)
+2023-02-19 21:26:09 - The following 1 profile is active: "uat"
+2023-02-19 21:26:13 - Tomcat initialized with port(s): 9092 (http)
+2023-02-19 21:26:13 - Starting service [Tomcat]
+2023-02-19 21:26:13 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-19 21:26:13 - Initializing Spring embedded WebApplicationContext
+2023-02-19 21:26:13 - Root WebApplicationContext: initialization completed in 3701 ms
+2023-02-19 21:26:18 - Tomcat started on port(s): 9092 (http) with context path ''
+2023-02-19 21:26:18 - Started ReportingApiApplication in 10.092 seconds (JVM running for 11.282)
+2023-02-19 21:26:18 - REPORTING-API IS RUNNING NOW !!!
+2023-02-19 21:34:28 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-19 21:34:28 - Initializing Servlet 'dispatcherServlet'
+2023-02-19 21:34:28 - Completed initialization in 3 ms
+2023-02-19 21:34:30 - Init duration for springdoc-openapi is: 1205 ms
+2023-02-19 21:35:05 - Inside the ReportingRestClientController.getApplications
+2023-02-19 21:35:05 - Inside ReportingRestClientServiceImpl.findAll, and applicationGetAllUrl:http://localhost:8090/api/v1/applications
+2023-02-19 21:35:06 - Application response:[com.reporting.model.ApplicationVO@3b3f993b, com.reporting.model.ApplicationVO@7bf23847, com.reporting.model.ApplicationVO@7b552c94]
+2023-02-19 21:35:31 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/reports/OSA': {public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationByName(java.lang.String), public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationById(int)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/reports/OSA': {public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationByName(java.lang.String), public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationById(int)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:432)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1265)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1047)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-19 21:40:55 - Starting ReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 13920 (D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api)
+2023-02-19 21:40:55 - The following 1 profile is active: "uat"
+2023-02-19 21:40:58 - Tomcat initialized with port(s): 9092 (http)
+2023-02-19 21:40:59 - Starting service [Tomcat]
+2023-02-19 21:40:59 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-19 21:40:59 - Initializing Spring embedded WebApplicationContext
+2023-02-19 21:40:59 - Root WebApplicationContext: initialization completed in 3561 ms
+2023-02-19 21:41:00 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'reportingRestClientController' method 
+com.reporting.controller.ReportingRestClientController#getApplications()
+to {GET [/api/v1/reports]}: There is already 'reportingRestClientController' bean method
+com.reporting.controller.ReportingRestClientController#getApplicationByName(String) mapped.
+2023-02-19 21:41:00 - Stopping service [Tomcat]
+2023-02-19 21:41:00 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-19 21:41:01 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'reportingRestClientController' method 
+com.reporting.controller.ReportingRestClientController#getApplications()
+to {GET [/api/v1/reports]}: There is already 'reportingRestClientController' bean method
+com.reporting.controller.ReportingRestClientController#getApplicationByName(String) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.reporting.ReportingApiApplication.main(ReportingApiApplication.java:13)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'reportingRestClientController' method 
+com.reporting.controller.ReportingRestClientController#getApplications()
+to {GET [/api/v1/reports]}: There is already 'reportingRestClientController' bean method
+com.reporting.controller.ReportingRestClientController#getApplicationByName(String) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+2023-02-19 21:42:56 - Starting ReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 6504 (D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api)
+2023-02-19 21:42:56 - The following 1 profile is active: "uat"
+2023-02-19 21:43:00 - Tomcat initialized with port(s): 9092 (http)
+2023-02-19 21:43:00 - Starting service [Tomcat]
+2023-02-19 21:43:00 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-19 21:43:00 - Initializing Spring embedded WebApplicationContext
+2023-02-19 21:43:00 - Root WebApplicationContext: initialization completed in 4127 ms
+2023-02-19 21:43:05 - Tomcat started on port(s): 9092 (http) with context path ''
+2023-02-19 21:43:05 - Started ReportingApiApplication in 9.788 seconds (JVM running for 11.137)
+2023-02-19 21:43:05 - REPORTING-API IS RUNNING NOW !!!
+2023-02-19 21:43:50 - Starting ReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 15604 (D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api)
+2023-02-19 21:43:50 - The following 1 profile is active: "uat"
+2023-02-19 21:43:53 - Tomcat initialized with port(s): 9092 (http)
+2023-02-19 21:43:53 - Starting service [Tomcat]
+2023-02-19 21:43:53 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-19 21:43:53 - Initializing Spring embedded WebApplicationContext
+2023-02-19 21:43:53 - Root WebApplicationContext: initialization completed in 3352 ms
+2023-02-19 21:43:58 - Tomcat started on port(s): 9092 (http) with context path ''
+2023-02-19 21:43:58 - Started ReportingApiApplication in 9.04 seconds (JVM running for 10.188)
+2023-02-19 21:43:58 - REPORTING-API IS RUNNING NOW !!!
+2023-02-19 21:44:28 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-19 21:44:28 - Initializing Servlet 'dispatcherServlet'
+2023-02-19 21:44:28 - Completed initialization in 4 ms
+2023-02-19 21:44:30 - Init duration for springdoc-openapi is: 1183 ms
+2023-02-19 21:44:42 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/reports/OSA': {public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationByName(java.lang.String), public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationById(int)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/reports/OSA': {public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationByName(java.lang.String), public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationById(int)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:432)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1265)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1047)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-19 22:00:27 - Starting ReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 13840 (D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api)
+2023-02-19 22:00:27 - The following 1 profile is active: "uat"
+2023-02-19 22:00:30 - Tomcat initialized with port(s): 9092 (http)
+2023-02-19 22:00:30 - Starting service [Tomcat]
+2023-02-19 22:00:30 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-19 22:00:31 - Initializing Spring embedded WebApplicationContext
+2023-02-19 22:00:31 - Root WebApplicationContext: initialization completed in 3803 ms
+2023-02-19 22:00:35 - Tomcat started on port(s): 9092 (http) with context path ''
+2023-02-19 22:00:35 - Started ReportingApiApplication in 9.954 seconds (JVM running for 11.179)
+2023-02-19 22:00:35 - REPORTING-API IS RUNNING NOW !!!
+2023-02-19 22:00:44 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-19 22:00:44 - Initializing Servlet 'dispatcherServlet'
+2023-02-19 22:00:44 - Completed initialization in 3 ms
+2023-02-19 22:00:46 - Init duration for springdoc-openapi is: 985 ms
+2023-02-19 22:01:04 - Inside the ReportingRestClientController.getApplicationByName
+2023-02-19 22:01:04 - Inside ReportingRestClientServiceImpl.findByName, and applicationGetAllUrl:http://localhost:8090/api/v1/applications
+2023-02-19 22:01:04 - URI Value is uri:http://localhost:8090/api/v1/applications/OSA
+2023-02-19 22:01:04 - Exception while calling getApplications
+org.springframework.web.client.HttpClientErrorException$BadRequest: 400 : "{"timestamp":"2023-02-19T16:31:04.781+00:00","status":400,"error":"Bad Request","path":"/api/v1/applications/OSA"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:101)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:757)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:383)
+	at com.reporting.service.ReportingRestClientServiceImpl.findByName(ReportingRestClientServiceImpl.java:143)
+	at com.reporting.service.ReportingRestClientServiceImpl$$FastClassBySpringCGLIB$$1fbce5ae.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.retry.annotation.AnnotationAwareRetryOperationsInterceptor.invoke(AnnotationAwareRetryOperationsInterceptor.java:162)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.reporting.service.ReportingRestClientServiceImpl$$EnhancerBySpringCGLIB$$fecd3757.findByName(<generated>)
+	at com.reporting.controller.ReportingRestClientController.getApplicationByName(ReportingRestClientController.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-19 22:02:48 - Starting ReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 2604 (D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api)
+2023-02-19 22:02:48 - The following 1 profile is active: "uat"
+2023-02-19 22:02:52 - Tomcat initialized with port(s): 9092 (http)
+2023-02-19 22:02:52 - Starting service [Tomcat]
+2023-02-19 22:02:52 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-19 22:02:52 - Initializing Spring embedded WebApplicationContext
+2023-02-19 22:02:52 - Root WebApplicationContext: initialization completed in 3404 ms
+2023-02-19 22:02:56 - Tomcat started on port(s): 9092 (http) with context path ''
+2023-02-19 22:02:57 - Started ReportingApiApplication in 9.381 seconds (JVM running for 10.617)
+2023-02-19 22:02:57 - REPORTING-API IS RUNNING NOW !!!
+2023-02-19 22:03:01 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-19 22:03:01 - Initializing Servlet 'dispatcherServlet'
+2023-02-19 22:03:01 - Completed initialization in 2 ms
+2023-02-19 22:03:03 - Init duration for springdoc-openapi is: 1122 ms
+2023-02-19 22:03:13 - Inside the ReportingRestClientController.getApplicationByName
+2023-02-19 22:03:13 - Inside ReportingRestClientServiceImpl.findByName, and applicationGetAllUrl:http://localhost:8090/api/v1/applications
+2023-02-19 22:03:13 - URI Value is uri:http://localhost:8090/api/v1/applications/name/OSA
+2023-02-19 22:03:13 - Exception while calling getApplications
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "{"timestamp":"2023-02-19T16:33:13.734+00:00","status":404,"error":"Not Found","path":"/api/v1/applications/name/OSA"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:757)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:383)
+	at com.reporting.service.ReportingRestClientServiceImpl.findByName(ReportingRestClientServiceImpl.java:144)
+	at com.reporting.service.ReportingRestClientServiceImpl$$FastClassBySpringCGLIB$$1fbce5ae.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.retry.annotation.AnnotationAwareRetryOperationsInterceptor.invoke(AnnotationAwareRetryOperationsInterceptor.java:162)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.reporting.service.ReportingRestClientServiceImpl$$EnhancerBySpringCGLIB$$2f687e3.findByName(<generated>)
+	at com.reporting.controller.ReportingRestClientController.getApplicationByName(ReportingRestClientController.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-19 22:04:20 - Starting ReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 16012 (D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api)
+2023-02-19 22:04:20 - The following 1 profile is active: "uat"
+2023-02-19 22:04:24 - Tomcat initialized with port(s): 9092 (http)
+2023-02-19 22:04:24 - Starting service [Tomcat]
+2023-02-19 22:04:24 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-19 22:04:24 - Initializing Spring embedded WebApplicationContext
+2023-02-19 22:04:24 - Root WebApplicationContext: initialization completed in 3495 ms
+2023-02-19 22:04:28 - Tomcat started on port(s): 9092 (http) with context path ''
+2023-02-19 22:04:28 - Started ReportingApiApplication in 9.222 seconds (JVM running for 10.404)
+2023-02-19 22:04:29 - REPORTING-API IS RUNNING NOW !!!
+2023-02-19 22:04:32 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-19 22:04:32 - Initializing Servlet 'dispatcherServlet'
+2023-02-19 22:04:32 - Completed initialization in 2 ms
+2023-02-19 22:04:34 - Init duration for springdoc-openapi is: 918 ms
+2023-02-19 22:04:50 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/reports/101': {public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationById(int), public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationByName(java.lang.String)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/reports/101': {public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationById(int), public org.springframework.http.ResponseEntity com.reporting.controller.ReportingRestClientController.getApplicationByName(java.lang.String)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:432)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1265)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1047)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-19 22:05:54 - Starting ReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 9820 (D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\reporting-api\reporting-api)
+2023-02-19 22:05:54 - The following 1 profile is active: "uat"
+2023-02-19 22:05:57 - Tomcat initialized with port(s): 9092 (http)
+2023-02-19 22:05:58 - Starting service [Tomcat]
+2023-02-19 22:05:58 - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-19 22:05:58 - Initializing Spring embedded WebApplicationContext
+2023-02-19 22:05:58 - Root WebApplicationContext: initialization completed in 3450 ms
+2023-02-19 22:06:02 - Tomcat started on port(s): 9092 (http) with context path ''
+2023-02-19 22:06:02 - Started ReportingApiApplication in 8.904 seconds (JVM running for 10.106)
+2023-02-19 22:06:02 - REPORTING-API IS RUNNING NOW !!!
+2023-02-19 22:06:15 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-19 22:06:15 - Initializing Servlet 'dispatcherServlet'
+2023-02-19 22:06:15 - Completed initialization in 1 ms
+2023-02-19 22:06:17 - Init duration for springdoc-openapi is: 1303 ms
+2023-02-19 22:06:28 - Inside ReportingRestClientController and calling the getApplicationById method ...
+2023-02-19 22:06:28 - Inside ReportingRestClientServiceImpl.findById, and applicationGetAllUrl:http://localhost:8090/api/v1/applications
+2023-02-19 22:06:28 - Application response:com.reporting.model.ApplicationVO@5c090192
