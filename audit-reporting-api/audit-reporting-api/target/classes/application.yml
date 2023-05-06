@@ -1,0 +1,23 @@
+#Reporting Service PROD COMMON Environment Properties
+server:
+  port: 9093
+
+#Log setup
+logging:
+  level:
+    org:
+      springframework: info
+    com:
+      bugtracking: debug
+  file:
+    name: auditreportingapi.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    
+ #URL Configuration of another Microservice
+bank:
+ url: http://localhost:8087/api/v1/banks
+branch:
+ url: http://localhost:8087/api/v1/branches
+transaction:
+ url: http://localhost:8087/api/v1/transactions

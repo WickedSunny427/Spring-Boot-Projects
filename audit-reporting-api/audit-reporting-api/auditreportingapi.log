@@ -1,0 +1,741 @@
+2023-04-02 16:14:17 - Starting AuditReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 7480 (D:\eMexo\MyWorkspaces\Workspace_1\audit-reporting-api\audit-reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\audit-reporting-api\audit-reporting-api)
+2023-04-02 16:14:17 - The following 1 profile is active: "prod"
+2023-04-02 16:14:21 - Tomcat initialized with port(s): 9096 (http)
+2023-04-02 16:14:21 - Starting service [Tomcat]
+2023-04-02 16:14:21 - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-02 16:14:21 - Initializing Spring embedded WebApplicationContext
+2023-04-02 16:14:21 - Root WebApplicationContext: initialization completed in 3999 ms
+2023-04-02 16:14:25 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-02 16:14:25 - Tomcat started on port(s): 9096 (http) with context path ''
+2023-04-02 16:14:25 - Started AuditReportingApiApplication in 9.551 seconds (JVM running for 26.972)
+2023-04-02 16:14:25 - AUDIT-REPORTING-API IS RUNNING NOW !!!
+2023-04-02 16:14:45 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-02 16:14:45 - Initializing Servlet 'dispatcherServlet'
+2023-04-02 16:14:45 - Completed initialization in 5 ms
+2023-04-02 16:14:48 - Init duration for springdoc-openapi is: 1834 ms
+2023-04-02 16:15:03 - Inside AuditReportingStatementController.getAllTransactions
+2023-04-02 16:15:04 - Inside AuditReportingStatementRestClientImpl.findAll, and transactionGetAllUrl:http://localhost:8087/api/v1/transactions
+2023-04-02 16:15:05 - Response received for AuditReportingStatementController.getAllTransactions is [TransactionDTO(transactionId=6, transactionType=SAVING, accountNumber=401, amount=564.0, customerId=502, transactionDate=2023-04-02T11:17:08.628, transactionStatus=null), TransactionDTO(transactionId=7, transactionType=SAVING, accountNumber=401, amount=8985.0, customerId=502, transactionDate=2023-04-02T11:27:00.052, transactionStatus=SUCCESS), TransactionDTO(transactionId=8, transactionType=WITHDRAW, accountNumber=401, amount=98654.0, customerId=501, transactionDate=2023-04-02T11:36:15.579, transactionStatus=PENDING), TransactionDTO(transactionId=9, transactionType=WITHDRAW, accountNumber=401, amount=65654.0, customerId=501, transactionDate=2023-04-02T11:36:15.579, transactionStatus=FAILED), TransactionDTO(transactionId=10, transactionType=WITHDRAW, accountNumber=402, amount=5454.0, customerId=501, transactionDate=2023-03-02T06:06:15.579, transactionStatus=FAILED), TransactionDTO(transactionId=11, transactionType=WITHDRAW, accountNumber=401, amount=990.0, customerId=501, transactionDate=2023-01-02T07:50:28.400, transactionStatus=SUCCESS)]
+2023-04-02 17:21:45 - Inside AuditReportingStatementController.getTransactionById with transaction id:6
+2023-04-02 17:21:45 - Inside AuditReportingStatementRestClientImpl.findById, and transactionGetByIdUrl:http://localhost:8087/api/v1/transactions with transaction id:6
+2023-04-02 17:21:45 - Response received for AuditReportingStatementRestClientImpl.findById with transaction id:6 is <200,TransactionDTO(transactionId=6, transactionType=SAVING, accountNumber=401, amount=564.0, customerId=502, transactionDate=2023-04-02T11:17:08.628, transactionStatus=null),[Content-Type:"application/json", Transfer-Encoding:"chunked", Date:"Sun, 02 Apr 2023 11:51:45 GMT", Keep-Alive:"timeout=60", Connection:"keep-alive"]>
+2023-04-02 17:21:45 - Response received for AuditReportingStatementController.getTransactionById with transaction id:6 is TransactionDTO(transactionId=6, transactionType=SAVING, accountNumber=401, amount=564.0, customerId=502, transactionDate=2023-04-02T11:17:08.628, transactionStatus=null)
+2023-04-02 17:22:12 - Inside AuditReportingStatementController.getTransactionsByAccountNumber with accountNumber:402
+2023-04-02 17:22:12 - Inside AuditReportingStatementRestClientImpl.findByAccountNumber, and transactionGetByAccountNumberUrl:http://localhost:8087/api/v1/transactions, accountNumber:402
+2023-04-02 17:22:19 - Inside AuditReportingStatementRestClientImpl.findByAccountNumber, and transactionGetByAccountNumberUrl:http://localhost:8087/api/v1/transactions, accountNumber:402
+2023-04-02 17:22:25 - Inside AuditReportingStatementRestClientImpl.findByAccountNumber, and transactionGetByAccountNumberUrl:http://localhost:8087/api/v1/transactions, accountNumber:402
+2023-04-02 17:22:31 - Inside AuditReportingStatementRestClientImpl.findByAccountNumber, and transactionGetByAccountNumberUrl:http://localhost:8087/api/v1/transactions, accountNumber:402
+2023-04-02 17:22:37 - Inside AuditReportingStatementRestClientImpl.findByAccountNumber, and transactionGetByAccountNumberUrl:http://localhost:8087/api/v1/transactions, accountNumber:402
+2023-04-02 17:22:37 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "{"timestamp":"2023-04-02T11:52:37.182+00:00","status":404,"error":"Not Found","path":"/api/v1/transactions/byAccountNumber/402"}"] with root cause
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "{"timestamp":"2023-04-02T11:52:37.182+00:00","status":404,"error":"Not Found","path":"/api/v1/transactions/byAccountNumber/402"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:757)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:383)
+	at com.reporting.auditreporting.service.statement.AuditReportingStatementRestClientImpl.findByAccountNumber(AuditReportingStatementRestClientImpl.java:61)
+	at com.reporting.auditreporting.service.statement.AuditReportingStatementRestClientImpl$$FastClassBySpringCGLIB$$eeb67275.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:97)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:329)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:209)
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:133)
+	at org.springframework.retry.annotation.AnnotationAwareRetryOperationsInterceptor.invoke(AnnotationAwareRetryOperationsInterceptor.java:159)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.reporting.auditreporting.service.statement.AuditReportingStatementRestClientImpl$$EnhancerBySpringCGLIB$$10901597.findByAccountNumber(<generated>)
+	at com.reporting.auditreporting.controller.statement.AuditReportingStatementController.getTransactionsByAccountNumber(AuditReportingStatementController.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:502)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-02 17:23:15 - Inside AuditReportingStatementController.getTransactionsByAccountNumber with accountNumber:401
+2023-04-02 17:23:15 - Inside AuditReportingStatementRestClientImpl.findByAccountNumber, and transactionGetByAccountNumberUrl:http://localhost:8087/api/v1/transactions, accountNumber:401
+2023-04-02 17:23:21 - Inside AuditReportingStatementRestClientImpl.findByAccountNumber, and transactionGetByAccountNumberUrl:http://localhost:8087/api/v1/transactions, accountNumber:401
+2023-04-02 17:23:27 - Inside AuditReportingStatementRestClientImpl.findByAccountNumber, and transactionGetByAccountNumberUrl:http://localhost:8087/api/v1/transactions, accountNumber:401
+2023-04-02 17:23:33 - Inside AuditReportingStatementRestClientImpl.findByAccountNumber, and transactionGetByAccountNumberUrl:http://localhost:8087/api/v1/transactions, accountNumber:401
+2023-04-02 17:23:40 - Inside AuditReportingStatementRestClientImpl.findByAccountNumber, and transactionGetByAccountNumberUrl:http://localhost:8087/api/v1/transactions, accountNumber:401
+2023-04-02 17:23:40 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "{"timestamp":"2023-04-02T11:53:40.026+00:00","status":404,"error":"Not Found","path":"/api/v1/transactions/byAccountNumber/401"}"] with root cause
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "{"timestamp":"2023-04-02T11:53:40.026+00:00","status":404,"error":"Not Found","path":"/api/v1/transactions/byAccountNumber/401"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:757)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:383)
+	at com.reporting.auditreporting.service.statement.AuditReportingStatementRestClientImpl.findByAccountNumber(AuditReportingStatementRestClientImpl.java:61)
+	at com.reporting.auditreporting.service.statement.AuditReportingStatementRestClientImpl$$FastClassBySpringCGLIB$$eeb67275.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:97)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:329)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:209)
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:133)
+	at org.springframework.retry.annotation.AnnotationAwareRetryOperationsInterceptor.invoke(AnnotationAwareRetryOperationsInterceptor.java:159)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.reporting.auditreporting.service.statement.AuditReportingStatementRestClientImpl$$EnhancerBySpringCGLIB$$10901597.findByAccountNumber(<generated>)
+	at com.reporting.auditreporting.controller.statement.AuditReportingStatementController.getTransactionsByAccountNumber(AuditReportingStatementController.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:502)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-02 17:24:26 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value '2023-02-02T11:17:08.628'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2023-02-02T11:17:08.628]]
+2023-04-02 17:25:06 - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDateTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam java.time.LocalDateTime] for value '2023-02-02T11:17:08.628'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2023-02-02T11:17:08.628]]
+2023-04-02 17:30:46 - Starting AuditReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 8040 (D:\eMexo\MyWorkspaces\Workspace_1\audit-reporting-api\audit-reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\audit-reporting-api\audit-reporting-api)
+2023-04-02 17:30:46 - The following 1 profile is active: "prod"
+2023-04-02 17:30:50 - Tomcat initialized with port(s): 9096 (http)
+2023-04-02 17:30:50 - Starting service [Tomcat]
+2023-04-02 17:30:50 - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-02 17:30:51 - Initializing Spring embedded WebApplicationContext
+2023-04-02 17:30:51 - Root WebApplicationContext: initialization completed in 4817 ms
+2023-04-02 17:30:56 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-02 17:30:56 - Tomcat started on port(s): 9096 (http) with context path ''
+2023-04-02 17:30:56 - Started AuditReportingApiApplication in 11.956 seconds (JVM running for 13.507)
+2023-04-02 17:30:56 - AUDIT-REPORTING-API IS RUNNING NOW !!!
+2023-04-02 17:31:24 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-02 17:31:24 - Initializing Servlet 'dispatcherServlet'
+2023-04-02 17:31:24 - Completed initialization in 2 ms
+2023-04-02 17:31:26 - Init duration for springdoc-openapi is: 1220 ms
+2023-04-02 17:31:56 - Inside AuditReportingStatementController.getTransactionsByAccountNumberAndDates with accountNumber:401, startDate:2023-02-02T11:17:08.628, endDate:2023-04-02T11:17:08.628
+2023-04-02 17:31:56 - Inside AuditReportingStatementRestClientImpl.findByAccountNumberAndDates, and transactionGetByAccountNumberAndDatesUrl:http://localhost:8087/api/v1/transactions, accountNumber:401, startDate:2023-02-02T11:17:08.628, endDate:2023-04-02T11:17:08.628
+2023-04-02 17:32:02 - Inside AuditReportingStatementRestClientImpl.findByAccountNumberAndDates, and transactionGetByAccountNumberAndDatesUrl:http://localhost:8087/api/v1/transactions, accountNumber:401, startDate:2023-02-02T11:17:08.628, endDate:2023-04-02T11:17:08.628
+2023-04-02 17:32:08 - Inside AuditReportingStatementRestClientImpl.findByAccountNumberAndDates, and transactionGetByAccountNumberAndDatesUrl:http://localhost:8087/api/v1/transactions, accountNumber:401, startDate:2023-02-02T11:17:08.628, endDate:2023-04-02T11:17:08.628
+2023-04-02 17:32:14 - Inside AuditReportingStatementRestClientImpl.findByAccountNumberAndDates, and transactionGetByAccountNumberAndDatesUrl:http://localhost:8087/api/v1/transactions, accountNumber:401, startDate:2023-02-02T11:17:08.628, endDate:2023-04-02T11:17:08.628
+2023-04-02 17:32:20 - Inside AuditReportingStatementRestClientImpl.findByAccountNumberAndDates, and transactionGetByAccountNumberAndDatesUrl:http://localhost:8087/api/v1/transactions, accountNumber:401, startDate:2023-02-02T11:17:08.628, endDate:2023-04-02T11:17:08.628
+2023-04-02 17:32:20 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "{"timestamp":"2023-04-02T12:02:20.939+00:00","status":404,"error":"Not Found","path":"/api/v1/transactions/byAccountNumberAndDates/401"}"] with root cause
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "{"timestamp":"2023-04-02T12:02:20.939+00:00","status":404,"error":"Not Found","path":"/api/v1/transactions/byAccountNumberAndDates/401"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:757)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:383)
+	at com.reporting.auditreporting.service.statement.AuditReportingStatementRestClientImpl.findByAccountNumberAndDates(AuditReportingStatementRestClientImpl.java:75)
+	at com.reporting.auditreporting.service.statement.AuditReportingStatementRestClientImpl$$FastClassBySpringCGLIB$$eeb67275.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:97)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:329)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:209)
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:133)
+	at org.springframework.retry.annotation.AnnotationAwareRetryOperationsInterceptor.invoke(AnnotationAwareRetryOperationsInterceptor.java:159)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.reporting.auditreporting.service.statement.AuditReportingStatementRestClientImpl$$EnhancerBySpringCGLIB$$f76d3425.findByAccountNumberAndDates(<generated>)
+	at com.reporting.auditreporting.controller.statement.AuditReportingStatementController.getTransactionsByAccountNumberAndDates(AuditReportingStatementController.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:502)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-02 17:33:40 - Inside AuditReportingStatementController.getAllTransactions
+2023-04-02 17:33:40 - Inside AuditReportingStatementRestClientImpl.findAll, and transactionGetAllUrl:http://localhost:8087/api/v1/transactions
+2023-04-02 17:33:41 - Response received for AuditReportingStatementController.getAllTransactions is [TransactionDTO(transactionId=6, transactionType=SAVING, accountNumber=401, amount=564.0, customerId=502, transactionDate=2023-04-02T11:17:08.628, transactionStatus=null), TransactionDTO(transactionId=7, transactionType=SAVING, accountNumber=401, amount=8985.0, customerId=502, transactionDate=2023-04-02T11:27:00.052, transactionStatus=SUCCESS), TransactionDTO(transactionId=8, transactionType=WITHDRAW, accountNumber=401, amount=98654.0, customerId=501, transactionDate=2023-04-02T11:36:15.579, transactionStatus=PENDING), TransactionDTO(transactionId=9, transactionType=WITHDRAW, accountNumber=401, amount=65654.0, customerId=501, transactionDate=2023-04-02T11:36:15.579, transactionStatus=FAILED), TransactionDTO(transactionId=10, transactionType=WITHDRAW, accountNumber=402, amount=5454.0, customerId=501, transactionDate=2023-03-02T06:06:15.579, transactionStatus=FAILED), TransactionDTO(transactionId=11, transactionType=WITHDRAW, accountNumber=401, amount=990.0, customerId=501, transactionDate=2023-01-02T07:50:28.400, transactionStatus=SUCCESS)]
+2023-04-02 17:34:16 - Inside AuditReportingStatementController.getTransactionsByAccountNumberAndDates with accountNumber:401, startDate:2023-04-01T11:17:08.628, endDate:2023-04-02T11:17:08.628
+2023-04-02 17:34:16 - Inside AuditReportingStatementRestClientImpl.findByAccountNumberAndDates, and transactionGetByAccountNumberAndDatesUrl:http://localhost:8087/api/v1/transactions, accountNumber:401, startDate:2023-04-01T11:17:08.628, endDate:2023-04-02T11:17:08.628
+2023-04-02 17:34:22 - Inside AuditReportingStatementRestClientImpl.findByAccountNumberAndDates, and transactionGetByAccountNumberAndDatesUrl:http://localhost:8087/api/v1/transactions, accountNumber:401, startDate:2023-04-01T11:17:08.628, endDate:2023-04-02T11:17:08.628
+2023-04-02 17:34:28 - Inside AuditReportingStatementRestClientImpl.findByAccountNumberAndDates, and transactionGetByAccountNumberAndDatesUrl:http://localhost:8087/api/v1/transactions, accountNumber:401, startDate:2023-04-01T11:17:08.628, endDate:2023-04-02T11:17:08.628
+2023-04-02 17:34:34 - Inside AuditReportingStatementRestClientImpl.findByAccountNumberAndDates, and transactionGetByAccountNumberAndDatesUrl:http://localhost:8087/api/v1/transactions, accountNumber:401, startDate:2023-04-01T11:17:08.628, endDate:2023-04-02T11:17:08.628
+2023-04-02 17:34:40 - Inside AuditReportingStatementRestClientImpl.findByAccountNumberAndDates, and transactionGetByAccountNumberAndDatesUrl:http://localhost:8087/api/v1/transactions, accountNumber:401, startDate:2023-04-01T11:17:08.628, endDate:2023-04-02T11:17:08.628
+2023-04-02 17:34:40 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "{"timestamp":"2023-04-02T12:04:40.408+00:00","status":404,"error":"Not Found","path":"/api/v1/transactions/byAccountNumberAndDates/401"}"] with root cause
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "{"timestamp":"2023-04-02T12:04:40.408+00:00","status":404,"error":"Not Found","path":"/api/v1/transactions/byAccountNumberAndDates/401"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:757)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:383)
+	at com.reporting.auditreporting.service.statement.AuditReportingStatementRestClientImpl.findByAccountNumberAndDates(AuditReportingStatementRestClientImpl.java:75)
+	at com.reporting.auditreporting.service.statement.AuditReportingStatementRestClientImpl$$FastClassBySpringCGLIB$$eeb67275.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor$1.doWithRetry(RetryOperationsInterceptor.java:97)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:329)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:209)
+	at org.springframework.retry.interceptor.RetryOperationsInterceptor.invoke(RetryOperationsInterceptor.java:133)
+	at org.springframework.retry.annotation.AnnotationAwareRetryOperationsInterceptor.invoke(AnnotationAwareRetryOperationsInterceptor.java:159)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.reporting.auditreporting.service.statement.AuditReportingStatementRestClientImpl$$EnhancerBySpringCGLIB$$f76d3425.findByAccountNumberAndDates(<generated>)
+	at com.reporting.auditreporting.controller.statement.AuditReportingStatementController.getTransactionsByAccountNumberAndDates(AuditReportingStatementController.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:502)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-02 17:45:22 - Starting AuditReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 10344 (D:\eMexo\MyWorkspaces\Workspace_1\audit-reporting-api\audit-reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\audit-reporting-api\audit-reporting-api)
+2023-04-02 17:45:22 - The following 1 profile is active: "prod"
+2023-04-02 17:45:26 - Tomcat initialized with port(s): 9096 (http)
+2023-04-02 17:45:26 - Starting service [Tomcat]
+2023-04-02 17:45:26 - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-02 17:45:27 - Initializing Spring embedded WebApplicationContext
+2023-04-02 17:45:27 - Root WebApplicationContext: initialization completed in 4248 ms
+2023-04-02 17:45:32 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-02 17:45:32 - Tomcat started on port(s): 9096 (http) with context path ''
+2023-04-02 17:45:32 - Started AuditReportingApiApplication in 10.939 seconds (JVM running for 12.184)
+2023-04-02 17:45:32 - AUDIT-REPORTING-API IS RUNNING NOW !!!
+2023-04-02 17:45:56 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-02 17:45:56 - Initializing Servlet 'dispatcherServlet'
+2023-04-02 17:45:56 - Completed initialization in 3 ms
+2023-04-02 17:48:05 - Inside AuditReportingStatementController.addTransaction with transactionDTO:TransactionDTO(transactionId=0, transactionType=DEPOSIT, accountNumber=402, amount=454.36, customerId=502, transactionDate=2023-04-02T12:17:30.372, transactionStatus=SUCCESS)
+2023-04-02 17:48:05 - Inside AuditReportingStatementRestClientImpl.save, and transactionSaveUrl:http://localhost:8087/api/v1/transactions
+2023-04-02 17:48:06 - Response received for AuditReportingStatementController.addTransaction with transactionDTO:TransactionDTO(transactionId=0, transactionType=DEPOSIT, accountNumber=402, amount=454.36, customerId=502, transactionDate=2023-04-02T12:17:30.372, transactionStatus=SUCCESS) is TransactionDTO(transactionId=12, transactionType=DEPOSIT, accountNumber=402, amount=454.36, customerId=501, transactionDate=2023-04-02T12:17:30.372, transactionStatus=SUCCESS)
+2023-04-02 18:41:23 - Starting AuditReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 8704 (D:\eMexo\MyWorkspaces\Workspace_1\audit-reporting-api\audit-reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\audit-reporting-api\audit-reporting-api)
+2023-04-02 18:41:23 - The following 1 profile is active: "prod"
+2023-04-02 18:41:27 - Tomcat initialized with port(s): 9096 (http)
+2023-04-02 18:41:27 - Starting service [Tomcat]
+2023-04-02 18:41:27 - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-02 18:41:27 - Initializing Spring embedded WebApplicationContext
+2023-04-02 18:41:27 - Root WebApplicationContext: initialization completed in 4256 ms
+2023-04-02 18:41:28 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'auditReportingStatementControllerWebClient': Unsatisfied dependency expressed through field 'auditReportingStatementWebClient'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'auditReportingStatementWebClientImpl': Unsatisfied dependency expressed through field 'webClient'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.reactive.function.client.WebClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-04-02 18:41:28 - Stopping service [Tomcat]
+2023-04-02 18:41:28 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-02 18:41:28 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field webClient in com.reporting.auditreporting.service.statement.AuditReportingStatementWebClientImpl required a bean of type 'org.springframework.web.reactive.function.client.WebClient' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.reactive.function.client.WebClient' in your configuration.
+
+2023-04-02 18:45:07 - Starting AuditReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 3272 (D:\eMexo\MyWorkspaces\Workspace_1\audit-reporting-api\audit-reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\audit-reporting-api\audit-reporting-api)
+2023-04-02 18:45:07 - The following 1 profile is active: "prod"
+2023-04-02 18:45:11 - Tomcat initialized with port(s): 9096 (http)
+2023-04-02 18:45:11 - Starting service [Tomcat]
+2023-04-02 18:45:11 - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-02 18:45:11 - Initializing Spring embedded WebApplicationContext
+2023-04-02 18:45:11 - Root WebApplicationContext: initialization completed in 4573 ms
+2023-04-02 18:45:12 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'auditReportingStatementControllerWebClient': Unsatisfied dependency expressed through field 'auditReportingStatementWebClient'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'auditReportingStatementWebClientImpl': Unsatisfied dependency expressed through field 'webClient'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.reactive.function.client.WebClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-04-02 18:45:12 - Stopping service [Tomcat]
+2023-04-02 18:45:12 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-02 18:45:12 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field webClient in com.reporting.auditreporting.service.statement.AuditReportingStatementWebClientImpl required a bean of type 'org.springframework.web.reactive.function.client.WebClient' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.reactive.function.client.WebClient' in your configuration.
+
+2023-04-02 19:28:14 - Starting AuditReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 9724 (D:\eMexo\MyWorkspaces\Workspace_1\audit-reporting-api\audit-reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\audit-reporting-api\audit-reporting-api)
+2023-04-02 19:28:14 - The following 1 profile is active: "prod"
+2023-04-02 19:28:18 - Tomcat initialized with port(s): 9096 (http)
+2023-04-02 19:28:18 - Starting service [Tomcat]
+2023-04-02 19:28:18 - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-02 19:28:18 - Initializing Spring embedded WebApplicationContext
+2023-04-02 19:28:18 - Root WebApplicationContext: initialization completed in 4462 ms
+2023-04-02 19:28:19 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'auditReportingStatementControllerWebClient': Unsatisfied dependency expressed through field 'webClientService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'auditReportingStatementWebClientImpl': Unsatisfied dependency expressed through field 'webClient'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.reactive.function.client.WebClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-04-02 19:28:19 - Stopping service [Tomcat]
+2023-04-02 19:28:19 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-02 19:28:19 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field webClient in com.reporting.auditreporting.service.statement.AuditReportingStatementWebClientImpl required a bean of type 'org.springframework.web.reactive.function.client.WebClient' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.reactive.function.client.WebClient' in your configuration.
+
+2023-04-02 19:29:20 - Starting AuditReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 1604 (D:\eMexo\MyWorkspaces\Workspace_1\audit-reporting-api\audit-reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\audit-reporting-api\audit-reporting-api)
+2023-04-02 19:29:20 - The following 1 profile is active: "prod"
+2023-04-02 19:29:24 - Tomcat initialized with port(s): 9096 (http)
+2023-04-02 19:29:24 - Starting service [Tomcat]
+2023-04-02 19:29:24 - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-02 19:29:24 - Initializing Spring embedded WebApplicationContext
+2023-04-02 19:29:24 - Root WebApplicationContext: initialization completed in 4199 ms
+2023-04-02 19:29:29 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-02 19:29:29 - Tomcat started on port(s): 9096 (http) with context path ''
+2023-04-02 19:29:29 - Started AuditReportingApiApplication in 10.951 seconds (JVM running for 12.211)
+2023-04-02 19:29:29 - AUDIT-REPORTING-API IS RUNNING NOW !!!
+2023-04-02 19:29:38 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-02 19:29:38 - Initializing Servlet 'dispatcherServlet'
+2023-04-02 19:29:38 - Completed initialization in 2 ms
+2023-04-02 19:29:41 - Init duration for springdoc-openapi is: 1409 ms
+2023-04-02 19:29:59 - Inside AuditReportingStatementController.findAll method
+2023-04-02 19:29:59 - Sending request to get all transactions
+2023-04-02 19:29:59 - Received response for all transactions
+2023-04-02 19:30:02 - Servlet.service() for servlet [dispatcherServlet] threw exception
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from GET http://localhost:8087/api/v1/transactions/api/v1/transactions/
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:223)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 from GET http://localhost:8087/api/v1/transactions/api/v1/transactions/ [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:223)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:207)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:415)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:424)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:478)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:712)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-02 19:30:02 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from GET http://localhost:8087/api/v1/transactions/api/v1/transactions/] with root cause
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from GET http://localhost:8087/api/v1/transactions/api/v1/transactions/
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:223)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 from GET http://localhost:8087/api/v1/transactions/api/v1/transactions/ [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:223)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:207)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:415)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:424)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:478)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:712)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-02 19:35:36 - Starting AuditReportingApiApplication using Java 17.0.5 on DESKTOP-IU5DGFU with PID 8612 (D:\eMexo\MyWorkspaces\Workspace_1\audit-reporting-api\audit-reporting-api\target\classes started by wicke in D:\eMexo\MyWorkspaces\Workspace_1\audit-reporting-api\audit-reporting-api)
+2023-04-02 19:35:36 - The following 1 profile is active: "prod"
+2023-04-02 19:35:41 - Tomcat initialized with port(s): 9096 (http)
+2023-04-02 19:35:41 - Starting service [Tomcat]
+2023-04-02 19:35:41 - Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-02 19:35:41 - Initializing Spring embedded WebApplicationContext
+2023-04-02 19:35:41 - Root WebApplicationContext: initialization completed in 4997 ms
+2023-04-02 19:35:48 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-02 19:35:48 - Tomcat started on port(s): 9096 (http) with context path ''
+2023-04-02 19:35:48 - Started AuditReportingApiApplication in 13.728 seconds (JVM running for 14.915)
+2023-04-02 19:35:49 - AUDIT-REPORTING-API IS RUNNING NOW !!!
+2023-04-02 19:35:55 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-02 19:35:55 - Initializing Servlet 'dispatcherServlet'
+2023-04-02 19:35:55 - Completed initialization in 1 ms
+2023-04-02 19:35:57 - Init duration for springdoc-openapi is: 1398 ms
+2023-04-02 19:36:08 - Inside AuditReportingStatementController.findAll method
+2023-04-02 19:36:08 - Sending request to get all transactions
+2023-04-02 19:36:09 - Received response for all transactions
+2023-04-02 19:36:10 - Servlet.service() for servlet [dispatcherServlet] threw exception
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from GET http://localhost:8087/api/v1/transactions/api/v1/transactions/
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:223)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 from GET http://localhost:8087/api/v1/transactions/api/v1/transactions/ [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:223)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:207)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:415)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:424)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:478)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:712)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+2023-04-02 19:36:10 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from GET http://localhost:8087/api/v1/transactions/api/v1/transactions/] with root cause
+org.springframework.web.reactive.function.client.WebClientResponseException$NotFound: 404 Not Found from GET http://localhost:8087/api/v1/transactions/api/v1/transactions/
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:223)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 404 from GET http://localhost:8087/api/v1/transactions/api/v1/transactions/ [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:223)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:207)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:101)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:415)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:424)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:478)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:712)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:833)

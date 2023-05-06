@@ -1,0 +1,3 @@
+#Audit Reporting Service Common Properties
+server:
+  port: 9096
