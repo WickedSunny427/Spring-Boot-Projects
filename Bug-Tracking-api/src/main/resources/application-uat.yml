@@ -1,0 +1,3 @@
+#UAT SERVER CONFIGURATIONS
+server:
+ port: 8092

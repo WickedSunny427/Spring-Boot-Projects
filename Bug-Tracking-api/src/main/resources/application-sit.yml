@@ -1,0 +1,11 @@
+#SIT Server Configuration
+server:
+ port: 8090
+ 
+ #Database Configuration
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+    password: tiger

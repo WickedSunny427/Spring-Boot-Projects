@@ -1,0 +1,33 @@
+#COMMON APPLICATION CONFIGURATIONS
+
+#Server Configuration
+server:
+ port: 8085
+ 
+#Logging Configuration
+logging:
+  level:
+    org:
+      springframework: info
+    com:
+      bugtracking: debug
+  file:
+    name: bugtrackingapi.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    
+#Actuator Configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health,metrics,loggers,beans,mappings,threaddump,env
+  endpoint:
+    health:
+      show-details: always
+
+
+#SQL Query's visible'
+spring:
+  jpa:
+    show-sql: true
